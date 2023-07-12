@@ -24,7 +24,14 @@ class StoreTypeRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "name" => "required|min:3|max:100",
+        ];
+    }
+    public function messages()
+    {
+        return[
+            "name.required"=> "il titolo è obbligatorio",
+            "name.min"=> "il titolo deve avere almeno :min caratteri",
         ];
     }
 }
