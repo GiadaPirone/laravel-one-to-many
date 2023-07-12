@@ -19,11 +19,11 @@
                         <a href="{{route("admin.projects.edit", $project)}}">Modifica Project</a>
                     </button>
 
-                     {{-- <form action="{{route ("projects.destroy ",$project)}}" method="POST">
+                     <form action="{{route ("admin.projects.destroy",$project)}}" method="POST">
                     @csrf
                     @method("DELETE")
                             <input type="submit" value="cancella">
-                    </form> --}}
+                    </form>
                 </div>
             </div>
         @endforeach
