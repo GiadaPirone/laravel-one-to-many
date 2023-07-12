@@ -22,7 +22,7 @@ class ProjectSeeder extends Seeder
            $project->title= $faker->sentence(10);
            $project->image = $faker->imageUrl(800, 600, 'people', true);
            $project->description = $faker->text(500);
-
+           
            $project->save();
            
 
