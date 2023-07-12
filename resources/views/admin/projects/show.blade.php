@@ -14,6 +14,12 @@
                 <button type="button" class="btn btn-light">
                     <a href="{{route("admin.projects.index")}}">Lista Projects</a>                       
                 </button>
+
+                {{-- <form action="{{route ("admin.projects.destroy ",$project )}}" method="POST">
+                    @csrf
+                    @method("DELETE")
+                    <input type="submit" value="cancella">
+                </form> --}}
             </div>
 
         </div>
