@@ -14,6 +14,16 @@
                     <button type="button" class="btn btn-light">
                         <a href="{{route("admin.projects.show", $project)}}">Seleziona Project</a>                       
                     </button>
+
+                    <button type="button" class="btn btn-warning">
+                        <a href="{{route("admin.projects.edit", $project)}}">Modifica Project</a>
+                    </button>
+
+                     {{-- <form action="{{route ("projects.destroy ",$project)}}" method="POST">
+                    @csrf
+                    @method("DELETE")
+                            <input type="submit" value="cancella">
+                    </form> --}}
                 </div>
             </div>
         @endforeach
@@ -22,3 +32,4 @@
 
 
 @endsection
+
